@@ -1,0 +1,159 @@
+/* 1. Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    margin: 0; /* Margen */
+    padding: 0;
+    background-color: #f4f6f8; /* Fondo claro neutro para destacar el contenido */
+    color: #1a1a1a; /* Color del texto principal */
+}
+
+/* 2. Encabezado (Header) */
+header {
+    background-color: #002F6C; /* Azul Real Dominicano */
+    text-align: center;
+    padding: 25px;
+    border-bottom: 4px solid #CE1126; /* Detalle Rojo */
+}
+
+header h1 {
+    margin: 0;
+    color: #FFFFFF; /* Blanco */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 3. Menú de navegación */
+nav {
+    background-color: #111827; /* Azul/Gris muy oscuro para alto contraste */
+    padding: 12px;
+}
+
+nav ul {
+    list-style: none; /* Quitar viñetas de la lista */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Pone los elementos en fila, uno al lado del otro */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* Texto blanco en menú */
+    font-weight: bold;
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #CE1126; /* Cambia a Rojo Dominicana al pasar el cursor */
+    text-decoration: underline;
+}
+
+/* 4. Contenedor principal */
+.contenedor {
+    display: flex; /* Activa el modo flex */
+    flex-wrap: wrap; /* Corrección: 'wrap' en lugar de 'wraps' */
+    gap: 20px; /* Espacio entre la sección y el aside */
+    padding: 20px;
+}
+
+/* 5. Sección principal (columna ancha) */
+.contenedor section {
+    flex: 3; /* Ocupa más espacio que el aside */
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 6. Aside (columna angosta, contenido secundario) */
+.contenedor aside {
+    flex: 1; /* Ocupa menos espacio que la sección */
+    background-color: #002F6C; /* Fondo Azul Dominicano */
+    color: #FFFFFF; /* Texto blanco para legibilidad */
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 5px solid #CE1126; /* Borde superior Rojo */
+}
+
+/* 7. Artículos dentro de la sección */
+article {
+    margin-bottom: 20px;
+}
+
+/* 8. Imágenes: que nunca se salgan de su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* 9. Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #E5E5E5;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #002F6C; /* Encabezados de tabla en Azul */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+/* 10. Formulario de contacto */
+form label {
+    font-weight: bold;
+    color: #002F6C;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 8px;
+    width: 220px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #CE1126; /* Botón en Rojo Dominicano */
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none; /* Corrección: agregada coma faltante en versión previa */
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #9B0B1B; /* Rojo más oscuro al hacer hover */
+}
+
+/* 11. Pie de página (footer) */
+footer {
+    background-color: #002F6C; /* Azul Real Dominicano */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 18px;
+    border-top: 4px solid #CE1126; /* Detalle Rojo */
+}
+
+footer a {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #CE1126;
+}
